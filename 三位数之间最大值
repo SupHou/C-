@@ -1,0 +1,33 @@
+第一种
+#include <stdio.h>
+int main()
+{
+    int a,b,c,max;
+    scanf("%d%d%d",&a,&b,&c);
+    max=a;
+    if(max<b)
+    max=b;
+    if(max<c)
+    max=c;
+    printf("%d",max);
+}
+第二种
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,max;
+    int max(int x,int y.int z);
+    scanf("%d%d%d",&a,&b,&c);
+    d=max(a,b,c);
+    printf("%d",d);
+}
+int max(int x,int y,int z)
+{
+    int m;
+    if(x>y)m=x;
+    else m=y;
+    int n;
+    if(m>z)n=m;
+    else n=z
+    return(n)
+}
