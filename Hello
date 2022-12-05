@@ -1,0 +1,7 @@
+# C-
+最初学习
+#include <stdio.h>
+int main()
+{
+    printf("Hello cC Word!“);
+}
