@@ -1,0 +1,11 @@
+
+#include<stdio.h>
+int main()
+define PI 3.14
+{
+    int r;
+    float s;
+    scanf("%d",&r);
+    s=PI*r*r;
+    printf("%f",s);
+}
