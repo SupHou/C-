@@ -1,0 +1,13 @@
+# C-
+最初学习
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d%d",&a,&b);
+    t=a;
+    a=b;
+    b=t;
+    printf("%d,%d",a,b);
+
+}
