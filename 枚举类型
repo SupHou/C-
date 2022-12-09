@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+enum weekday
+{
+	mon,tue,thu,fri,sat,sun,wed
+};
+
+int main()
+{
+	enum weekday workday;
+	workday=fri;
+	printf("%d",workday);
+}
