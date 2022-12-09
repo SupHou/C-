@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+	int i,j,t,a[5]={15,20,78,21,45};
+	for(i=0;i<5;i++)
+	printf("%5d",a[i]);
+	for(i=0;i<4;i++)
+	{
+		for(j=4;j>i;j--)
+		{
+			if(a[j]<a[j-1])
+			{
+				t=a[j];
+				a[j]=a[j-1];
+				a[j-1]=t;
+				
+			}
+		}
+	}
+	for(i=0;i<5;i++)
+	{
+		printf("%5d",a[i]);
+	}
+}
