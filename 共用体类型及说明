@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+union data
+{
+	int a;
+	char b;
+	float c;
+	
+};
+
+int main()
+{
+	union data x;
+	x.a=3;
+	x.b=97;
+	x.c=2.2;
+	printf("%d\n,%c\n,%.2f\n",x.a,x.b,x.c);
+	printf("%d\n",&x.a);
+	printf("%c\n",&x.b);
+	printf("%.2f\n",&x.c);
+}
