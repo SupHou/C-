@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+	struct Student{
+		
+		int num[20];
+		char sex;
+		int age;
+		int name[20];
+		char addr[30];
+	};
+
+int main()
+{
+	struct Student stu={100,'M',20,"zhangsan","黑龙江省"};
+	printf("%d  ",stu.num);
+	printf("%c  ",stu.sex);
+	printf("%d  ",stu.age);
+	printf("%s  ",stu.name);
+	printf("%s  ",stu.addr);
+}
