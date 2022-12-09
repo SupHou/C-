@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+struct Student
+{
+		
+	int number;
+	char name[20];
+	int sex;
+	int age;
+	char address[30];
+};
+
+int main()
+{
+	struct Student stu1[3];
+	int i;
+	struct Student *p=stu1;
+	for(i=0;i<3;i++)
+	{
+		scanf("%d",&p->number);getchar();
+		scanf("%s",p->name);getchar();
+		scanf("%c",&p->sex);getchar();
+		scanf("%d",&p->age);getchar();
+		scanf("%s",&p->address);getchar();
+		p++;
+	};
+	for(i=0;i<3;i++)
+	{
+	printf("%d  ",stu1[i].number);
+	printf("%c  ",stu1[i].sex);
+	printf("%d  ",stu1[i].age);
+	printf("%s  ",stu1[i].name);
+	printf("%s\n  ",stu1[i].address);
+	};
+}
