@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+enum colorball
+{
+red,yellow,blue,white,black
+};
+
+int main()
+{
+	enum colorball i,j,k,pri;
+	int loop,n=0;
+	for(i=red;i<=black;i++)
+	{
+		for(j=red;j<=black;j++)
+		{
+			if(i!=j)
+			for(k=red;k<=black;k++)
+			{
+				if(k!=i&&k!=j){
+				printf("\n%d",++n);
+				}
+				for(loop=1;loop<=3;loop++)
+				{
+				switch(loop)
+				{
+				case 1:pri=i;break;
+				case 2:pri=j;break;
+				case 3:pri=k;break;
+				}
+				switch(pri)
+				{
+				 case red:printf("%7s","red");break;
+				 case yellow:printf("%7s","yellow");break;
+				 case blue:printf("%7s","blue");break;
+				 case white:printf("%7s","white");break;
+				 case black:printf("%7s","black");break;
+			    }
+			    }
+			}
+		}
+	}
+}
