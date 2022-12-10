@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	FILE *fp;
+	if((fp=fopen("C://aa//testchar.txt","a"))==NULL)
+	{
+	printf("cannot FILE");
+	exit(0);
+	}
+	fputc('\0',fp);
+	fputc('w',fp);
+	fputc('o',fp);
+	fputc('r',fp);
+	fputc('l',fp);
+	fputc('d',fp);
+	fclose(fp);
+}
