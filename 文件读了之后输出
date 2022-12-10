@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	FILE *fp;
+	char ch;
+	if((fp=fopen("C://aa//testchar.txt","r"))==NULL)
+	{
+	printf("cannot FILE");
+	exit(0);
+	}
+	while(ch=fgetc(fp)==EOF);
+	{
+		printf("ch")
+	}
+	fclose(fp);
+}
